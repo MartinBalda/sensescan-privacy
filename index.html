@@ -30,7 +30,7 @@
 <li>No ads.</li>
 <li>No analytics or tracking by SenseScan.</li>
 <li>No data is sold.</li>
-<li>What you scan stays on your phone.</li>
+<li>What you scan stays on your phone. Only if you turn on product lookup is a product's barcode number sent to Open Food Facts.</li>
 </ul>
 
 <h2>Camera and images</h2>
@@ -38,12 +38,15 @@
 <p>The clipboard is read only when you tap the clipboard button.</p>
 
 <h2>What is stored on your phone</h2>
-<p>SenseScan stores only your settings: language, theme, guidance channels, voice, torch, the product lookup switch, and whether hints were shown. There is no scan history.</p>
-<p>Android's automatic backup may back up these settings to your Google account. You control that in Android settings.</p>
-<p>Uninstalling the app or clearing its storage removes these settings.</p>
+<p>SenseScan stores your settings: language, theme, guidance channels, voice, torch, the product lookup switch, and whether hints were shown. There is no scan history.</p>
+<p>SenseScan also saves the products it looked up, so they can be read again without internet and when product lookup is off. For each product that was found, it saves the name, brand and quantity, with the barcode number and the day of the lookup (the date only, never the time). Products that were not found are not saved. There is no count of scans and no list of when you scanned.</p>
+<p>A saved product is looked up again after 30 days when you have internet. Without internet, or with product lookup off, an older saved product is still used. At most 500 products are kept; when there are more, the oldest are dropped.</p>
+<p>Saved products are kept in a private file that is excluded from Android's backup, so they are never backed up or copied to a new phone. Android's automatic backup may still back up your settings to your Google account. You control that in Android settings.</p>
+<p>You can delete the saved products at any time with "Clear saved data" in SenseScan's settings. Uninstalling the app or clearing its storage removes the settings and the saved products.</p>
 
 <h2>Product lookup (optional, off by default)</h2>
 <p>When you turn product lookup on, the barcode number of product codes is sent over HTTPS to Open Food Facts to get the product name.</p>
+<p>Before asking Open Food Facts, SenseScan checks the products saved on your phone. A product saved 30 days ago or less is read from the phone and nothing is sent. With product lookup off, SenseScan uses saved products only and never sends anything.</p>
 <p>Open Food Facts receives the number and, as with any internet request, your IP address. Read <a href="https://world.openfoodfacts.org/privacy">the Open Food Facts privacy policy</a>.</p>
 
 <h2>Google ML Kit</h2>

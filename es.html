@@ -30,7 +30,7 @@
 <li>Sin publicidad.</li>
 <li>Sin analítica ni seguimiento por parte de SenseScan.</li>
 <li>No se venden datos.</li>
-<li>Lo que usted escanea permanece en su teléfono.</li>
+<li>Lo que usted escanea permanece en su teléfono. Solo si usted activa la búsqueda de producto, el número del código de barras de un producto se envía a Open Food Facts.</li>
 </ul>
 
 <h2>Cámara e imágenes</h2>
@@ -38,12 +38,15 @@
 <p>El portapapeles se lee solo cuando usted toca el botón del portapapeles.</p>
 
 <h2>Qué se guarda en el teléfono</h2>
-<p>SenseScan guarda únicamente sus ajustes: idioma, tema, canales de guía, voz, linterna, el interruptor de búsqueda de producto y si ya se mostraron las sugerencias. No hay historial de escaneos.</p>
-<p>La copia de seguridad automática de Android puede respaldar estos ajustes en su cuenta de Google. Usted lo controla en los ajustes de Android.</p>
-<p>Al desinstalar la aplicación o borrar su almacenamiento, estos ajustes se eliminan.</p>
+<p>SenseScan guarda sus ajustes: idioma, tema, canales de guía, voz, linterna, el interruptor de búsqueda de producto y si ya se mostraron las sugerencias. No hay historial de escaneos.</p>
+<p>SenseScan también guarda los productos que buscó, para poder leerlos de nuevo sin internet y cuando la búsqueda de producto está desactivada. De cada producto encontrado guarda el nombre, la marca y la cantidad, junto con el número del código de barras y el día de la búsqueda (solo la fecha, nunca la hora). Los productos que no se encontraron no se guardan. No hay conteo de escaneos ni lista de cuándo escaneó.</p>
+<p>Un producto guardado se busca de nuevo después de 30 días si usted tiene internet. Sin internet, o con la búsqueda de producto desactivada, se sigue usando un producto guardado más antiguo. Se conservan como máximo 500 productos; cuando hay más, se descartan los más antiguos.</p>
+<p>Los productos guardados se conservan en un archivo privado excluido de la copia de seguridad de Android, así que nunca se respaldan ni se copian a un teléfono nuevo. La copia de seguridad automática de Android sí puede respaldar sus ajustes en su cuenta de Google. Usted lo controla en los ajustes de Android.</p>
+<p>Usted puede borrar los productos guardados en cualquier momento con «Borrar datos guardados» en los ajustes de SenseScan. Al desinstalar la aplicación o borrar su almacenamiento, se eliminan los ajustes y los productos guardados.</p>
 
 <h2>Búsqueda de producto (opcional, desactivada por defecto)</h2>
 <p>Cuando usted activa la búsqueda de producto, el número del código de barras de los códigos de producto se envía por HTTPS a Open Food Facts para obtener el nombre del producto.</p>
+<p>Antes de consultar a Open Food Facts, SenseScan revisa los productos guardados en su teléfono. Un producto guardado hace 30 días o menos se lee desde el teléfono y no se envía nada. Con la búsqueda de producto desactivada, SenseScan usa solo los productos guardados y nunca envía nada.</p>
 <p>Open Food Facts recibe el número y, como en cualquier solicitud de internet, su dirección IP. Lea <a href="https://world.openfoodfacts.org/privacy">la política de privacidad de Open Food Facts</a>.</p>
 
 <h2>Google ML Kit</h2>
