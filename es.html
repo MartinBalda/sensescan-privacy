@@ -18,7 +18,7 @@
 <nav aria-label="Idioma"><a href="index.html" hreflang="en" lang="en">Read in English</a></nav>
 <main>
 <h1>Política de privacidad de SenseScan</h1>
-<p>Fecha de entrada en vigor: <time datetime="2026-10-03">3 de octubre de 2026</time>.</p>
+<p>Fecha de entrada en vigor: <time datetime="2026-10-16">16 de octubre de 2026</time>.</p>
 
 <h2>Quiénes somos</h2>
 <p>SenseScan es una aplicación accesible para Android que lee códigos de barras y QR, creada por Martín Baldassarre. Es de código abierto, bajo la licencia Apache 2.0.</p>
@@ -30,7 +30,7 @@
 <li>Sin publicidad.</li>
 <li>Sin analítica ni seguimiento por parte de SenseScan.</li>
 <li>No se venden datos.</li>
-<li>Lo que usted escanea permanece en su teléfono. Solo si usted activa la búsqueda de producto, el número del código de barras de un producto se envía a Open Food Facts.</li>
+<li>Lo que usted escanea permanece en su teléfono. Solo si usted activa la búsqueda de producto, el número del código de barras de un producto se envía a Open Food Facts y sus bases hermanas, y el código nacional de un medicamento español se envía a CIMA, de la Agencia Española de Medicamentos y Productos Sanitarios (AEMPS).</li>
 </ul>
 
 <h2>Cámara e imágenes</h2>
@@ -39,7 +39,7 @@
 
 <h2>Qué se guarda en el teléfono</h2>
 <p>SenseScan guarda sus ajustes: idioma, tema, canales de guía, voz, linterna, el interruptor de búsqueda de producto y si ya se mostraron las sugerencias. No hay historial de escaneos.</p>
-<p>SenseScan también guarda los productos que buscó, para poder leerlos de nuevo sin internet y cuando la búsqueda de producto está desactivada. De cada producto encontrado guarda el nombre, la marca y la cantidad, junto con el número del código de barras y el día de la búsqueda (solo la fecha, nunca la hora). Los productos que no se encontraron no se guardan. No hay conteo de escaneos ni lista de cuándo escaneó.</p>
+<p>SenseScan también guarda los productos que buscó, para poder leerlos de nuevo sin internet y cuando la búsqueda de producto está desactivada. De cada producto encontrado guarda el nombre, la marca y la cantidad, junto con el número del código de barras y el día de la búsqueda (solo la fecha, nunca la hora). De cada medicamento español encontrado guarda el nombre, el laboratorio, si requiere receta y la dirección y fecha de su prospecto, junto con su código nacional y el día de la búsqueda. Los productos y medicamentos que no se encontraron no se guardan. No hay conteo de escaneos ni lista de cuándo escaneó.</p>
 <p>Un producto guardado se busca de nuevo después de 30 días si usted tiene internet. Sin internet, o con la búsqueda de producto desactivada, se sigue usando un producto guardado más antiguo. Se conservan como máximo 500 productos; cuando hay más, se descartan los más antiguos.</p>
 <p>Los productos guardados se conservan en un archivo privado excluido de la copia de seguridad de Android, así que nunca se respaldan ni se copian a un teléfono nuevo. La copia de seguridad automática de Android sí puede respaldar sus ajustes en su cuenta de Google. Usted lo controla en los ajustes de Android.</p>
 <p>Usted puede borrar los productos guardados en cualquier momento con «Borrar datos guardados» en los ajustes de SenseScan. Al desinstalar la aplicación o borrar su almacenamiento, se eliminan los ajustes y los productos guardados.</p>
@@ -47,7 +47,9 @@
 <h2>Búsqueda de producto (opcional, desactivada por defecto)</h2>
 <p>Cuando usted activa la búsqueda de producto, el número del código de barras de los códigos de producto se envía por HTTPS a Open Food Facts para obtener el nombre del producto.</p>
 <p>Antes de consultar a Open Food Facts, SenseScan revisa los productos guardados en su teléfono. Un producto guardado hace 30 días o menos se lee desde el teléfono y no se envía nada. Con la búsqueda de producto desactivada, SenseScan usa solo los productos guardados y nunca envía nada.</p>
-<p>Open Food Facts recibe el número y, como en cualquier solicitud de internet, su dirección IP. Lea <a href="https://world.openfoodfacts.org/privacy">la política de privacidad de Open Food Facts</a>.</p>
+<p>Si el producto no es un alimento, Open Food Facts puede redirigir la consulta a una de sus bases hermanas: Open Beauty Facts, Open Pet Food Facts u Open Products Facts. Son del mismo proyecto y reciben los mismos datos.</p>
+<p>Open Food Facts y sus bases hermanas reciben el número y, como en cualquier solicitud de internet, su dirección IP. Lea <a href="https://world.openfoodfacts.org/privacy">la política de privacidad de Open Food Facts</a>.</p>
+<p>Los medicamentos nunca se consultan en Open Food Facts. Si el código de un medicamento español contiene su código nacional, SenseScan envía por HTTPS solo ese código nacional de seis dígitos a CIMA, la base pública de medicamentos de la AEMPS, para obtener el nombre del medicamento y su prospecto. La AEMPS recibe el código nacional y su dirección IP. Lea <a href="https://www.aemps.gob.es/aviso-legal/">el aviso legal de la AEMPS</a>.</p>
 
 <h2>Google ML Kit</h2>
 <p>El lector de códigos usa ML Kit de Google en el dispositivo. ML Kit envía a Google datos técnicos de diagnóstico y de uso por HTTPS:</p>
@@ -63,6 +65,7 @@
 
 <h2>Acciones que usted elige</h2>
 <p>Abrir un enlace, Wi-Fi, contactos, calendario, el marcador telefónico, WhatsApp y enviar comentarios por correo entregan los datos a la aplicación que usted elija. Esto ocurre solo después de que usted toque. Se aplican las políticas de esas aplicaciones.</p>
+<p>Cuando usted confirma que quiere abrir un enlace escaneado, SenseScan primero pregunta a ese sitio qué tipo de archivo hay en esa dirección, siguiendo sus redirecciones. Ese sitio recibe su dirección IP, como cuando lo abre un navegador. Si es un documento PDF, SenseScan lo descarga en el almacenamiento privado de la aplicación y lo abre con la aplicación de PDF que usted elija. Los PDF descargados quedan en la memoria temporal de la aplicación: los de más de un día se borran cuando se descarga otro, y Android también puede borrarlos. Si usted elige «Guardar en Descargas», el PDF se copia a su carpeta de descargas.</p>
 <p>Si envía comentarios por correo, su mensaje se usa solo para responderle.</p>
 
 <h2>Menores</h2>
