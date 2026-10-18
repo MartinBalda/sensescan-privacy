@@ -18,7 +18,7 @@
 <nav aria-label="Language"><a href="es.html" hreflang="es" lang="es">Leer en español</a></nav>
 <main>
 <h1>SenseScan privacy policy</h1>
-<p>Effective date: <time datetime="2026-10-17">17 October 2026</time>.</p>
+<p>Effective date: <time datetime="2026-10-18">18 October 2026</time>.</p>
 
 <h2>Who we are</h2>
 <p>SenseScan is an accessible barcode and QR scanner app for Android by Martín Baldassarre. It is open source under the Apache License 2.0.</p>
@@ -37,6 +37,8 @@
 <h2>Camera and images</h2>
 <p>Camera frames, gallery images, shared images and clipboard images are processed on your device to read codes. SenseScan never stores or sends them.</p>
 <p>The clipboard is read only when you tap the clipboard button.</p>
+<p>Documents you choose or share with SenseScan (PDF, Word, PowerPoint, Excel and LibreOffice files) are read on your device to find codes in their pages and images. SenseScan never sends them. To read some of them it keeps a temporary copy in its private storage and deletes it when it finishes.</p>
+<p>When you choose "Read the package text", SenseScan reads the text printed on the package with Google ML Kit on your device. The text and the camera images are never stored or sent. Only a name you decide to save is kept, as described below. A date read from the package is said but never saved.</p>
 
 <h2>What is stored on your phone</h2>
 <p>SenseScan stores your settings: language, theme, guidance channels, voice, torch, the product lookup switch, and whether hints were shown. There is no scan history.</p>
@@ -54,7 +56,7 @@
 <p>Medicines are never looked up in Open Food Facts. If a Spanish medicine's code contains its national code, SenseScan sends only that six-digit national code over HTTPS to CIMA, the AEMPS public medicines database, to get the medicine's name and its leaflet. AEMPS receives the national code and your IP address. Read <a href="https://www.aemps.gob.es/aviso-legal/">the AEMPS legal notice</a>.</p>
 
 <h2>Google ML Kit</h2>
-<p>The code reader uses Google's ML Kit on your device. ML Kit sends Google technical diagnostics and usage data over HTTPS:</p>
+<p>The code reader and the package text reader use Google's ML Kit on your device. ML Kit sends Google technical diagnostics and usage data over HTTPS:</p>
 <ul>
 <li>device information: manufacturer, model and operating system version;</li>
 <li>the app package name and version;</li>
@@ -62,7 +64,7 @@
 <li>performance metrics and API settings;</li>
 <li>because SenseScan uses automatic zoom: a scanning session identifier, zoom changes and the position of the detected code within the frame.</li>
 </ul>
-<p>ML Kit does not send the images or the content of codes. Google states that it does not share this data with third parties.</p>
+<p>ML Kit does not send the images, the content of codes or the text it reads. Google states that it does not share this data with third parties.</p>
 <p>More information: <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Actions you choose</h2>
